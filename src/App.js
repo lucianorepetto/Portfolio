@@ -8,8 +8,9 @@ function App() {
         <p>
           This Page is in Progress.
         </p>
+        <Outlet/>
       </header>
-      <Outlet/>
+      
     </div>
   );
 }

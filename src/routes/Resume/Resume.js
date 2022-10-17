@@ -1,7 +1,11 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
 function Resume() {
-  return (
+  useEffect(() => {
+    document.title = "Luciano Repetto | Resume"
+  }, [])
+
+  return (  
     <div>Resume</div>
   )
 }
