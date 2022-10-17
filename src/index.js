@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route
 } from 'react-router-dom'
@@ -13,13 +13,12 @@ import Resume from './routes/Resume/Resume';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter basename={process.env.PUBLIC_URL}>
-    {/* <Routes>
+  <HashRouter>
+    <Routes>
       <Route path="/" element={<App/>}>
-        <Route path="./resume" element={<Resume/>} />
+        <Route path="resume" element={<Resume/>} />
       </Route>
-    </Routes> */}
-    <App />
-  </BrowserRouter>
+    </Routes>
+  </HashRouter>
 );
 reportWebVitals();
