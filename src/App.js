@@ -1,4 +1,5 @@
 import './App.css';
+import { Outlet } from 'react-router-dom';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
           This Page is in Progress.
         </p>
       </header>
+      <Outlet/>
     </div>
   );
 }
