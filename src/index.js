@@ -14,11 +14,12 @@ import Resume from './routes/Resume/Resume';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter basename={process.env.PUBLIC_URL}>
-    <Routes>
+    {/* <Routes>
       <Route path="/" element={<App/>}>
         <Route path="./resume" element={<Resume/>} />
       </Route>
-    </Routes>
+    </Routes> */}
+    <App />
   </BrowserRouter>
 );
 reportWebVitals();
